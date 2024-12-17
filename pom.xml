@@ -11,20 +11,20 @@
     </parent>
 
     <groupId>com.monitor.weather</groupId>
-    <artifactId>weather-monitor-ms</artifactId>
+    <artifactId>weather-manage-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>weather-monitor-ms</name>
-    <description>weather-monitor-ms</description>
+    <name>weather-manage-system</name>
+    <description>weather-manage-system</description>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>ms-common</module>
-        <module>ms-dao</module>
-        <module>ms-domain</module>
-        <module>ms-service</module>
-        <module>ms-web</module>
+        <module>weather-common</module>
+        <module>weather-dao</module>
+        <module>weather-domain</module>
+        <module>weather-service</module>
+        <module>weather-web</module>
     </modules>
 
     <properties>

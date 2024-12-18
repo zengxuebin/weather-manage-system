@@ -5,7 +5,7 @@ import com.weather.domain.entity.AlertRecipient;
 
 /**
  * @Description: 预警接收 业务层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 04:03
  */
 public interface AlertRecipientService extends IService<AlertRecipient> {

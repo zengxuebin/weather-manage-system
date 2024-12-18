@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  * @Description: 预警推送 业务实现层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 04:08
  */
 @Service

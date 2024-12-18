@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @Description: 用户登陆对象
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/24 18:50
  */
 @Data

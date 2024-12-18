@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * @Description: 历史天气统计表
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/15 09:19
  */
 @NoArgsConstructor

@@ -12,7 +12,7 @@ import static com.google.code.kaptcha.Constants.*;
 
 /**
  * @Description: 验证码配置
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/24 13:19
  */
 @Configuration

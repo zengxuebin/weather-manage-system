@@ -2,7 +2,7 @@ package com.weather.common.constant;
 
 /**
  * @Description: 邮件预警信息模板
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/17 19:40
  */
 public class AlertTemplateConstants {

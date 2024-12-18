@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * @Description: 字典 业务处理层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/8 08:41
  */
 @Service

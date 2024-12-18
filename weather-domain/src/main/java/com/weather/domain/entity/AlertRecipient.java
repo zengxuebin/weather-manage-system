@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @Description: 预警接收
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 03:42
  */
 @NoArgsConstructor

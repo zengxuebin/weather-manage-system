@@ -2,7 +2,7 @@ package com.weather.common.enums;
 
 /**
  * @Description: 用户状态
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/24 18:40
  */
 public enum UserStatusEnum {

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 /**
  * @Description: 预警信息
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 03:05
  */
 @NoArgsConstructor

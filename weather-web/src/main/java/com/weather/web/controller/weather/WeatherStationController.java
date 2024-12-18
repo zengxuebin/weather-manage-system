@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * @Description: 气象监测站
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/14 13:57
  */
 @RestController

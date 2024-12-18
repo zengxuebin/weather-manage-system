@@ -2,7 +2,7 @@ package com.weather.common.constant;
 
 /**
  * @Description: 预警状态常量
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/17 13:29
  */
 public class AlertResultConstants {

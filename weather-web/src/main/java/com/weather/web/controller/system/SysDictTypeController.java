@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * @Description: 数据字典
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/8 14:15
  */
 @RestController

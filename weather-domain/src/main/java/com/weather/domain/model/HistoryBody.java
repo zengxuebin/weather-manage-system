@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * @Description: 历史天气统计条件
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/15 09:31
  */
 @Data

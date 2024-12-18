@@ -5,7 +5,7 @@ import com.weather.domain.entity.AlertRule;
 
 /**
  * @Description: 预警规则 业务层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 04:03
  */
 public interface AlertRuleService extends IService<AlertRule> {

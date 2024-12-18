@@ -12,7 +12,7 @@ import java.util.Date;
 
 /**
  * @Description: 气象数据表
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 02:42
  */
 @Data

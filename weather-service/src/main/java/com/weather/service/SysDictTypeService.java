@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @Description: 字典类型 业务层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/8 08:46
  */
 public interface SysDictTypeService extends IService<SysDictType> {

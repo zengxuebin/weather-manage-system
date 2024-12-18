@@ -5,7 +5,7 @@ import lombok.Setter;
 
 /**
  * @Description: 监测站分页查询条件
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/14 14:13
  */
 @Setter

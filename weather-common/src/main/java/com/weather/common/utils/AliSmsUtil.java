@@ -6,7 +6,7 @@ import com.weather.common.constant.AliSmsConstants;
 
 /**
  * @Description: 阿里短信发送工具类
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/20 00:01
  */
 public class AliSmsUtil {

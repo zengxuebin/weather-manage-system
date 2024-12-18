@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: 站点类型
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/15 13:47
  */
 @Data

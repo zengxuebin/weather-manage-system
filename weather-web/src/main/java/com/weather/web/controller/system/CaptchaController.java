@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Description: 验证码操作处理
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/3 18:06
  */
 @RestController

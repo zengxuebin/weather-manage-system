@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Description: jwt token配置
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/30 17:00
  */
 @Component

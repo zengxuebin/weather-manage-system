@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @Description: 气象数据导出 mapper层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 03:59
  */
 @Mapper

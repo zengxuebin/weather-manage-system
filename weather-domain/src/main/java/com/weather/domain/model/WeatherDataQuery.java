@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: 气象数据条件
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/16 14:32
  */
 @Data

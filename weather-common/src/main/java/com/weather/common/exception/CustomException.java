@@ -6,7 +6,7 @@ import lombok.Setter;
 
 /**
  * @Description: 自定义异常
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/30 15:39
  */
 @Getter

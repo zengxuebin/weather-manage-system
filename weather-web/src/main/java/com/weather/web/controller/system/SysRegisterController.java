@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Description: 注册
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/9 20:53
  */
 @RestController

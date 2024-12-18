@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 /**
  * @Description: 预警信息 mapper层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 03:58
  */
 @Mapper

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @Description: 用户类 mapper
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/1 22:40
  */
 @Mapper

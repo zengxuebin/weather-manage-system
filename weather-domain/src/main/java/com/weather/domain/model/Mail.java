@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * @Description: Mail 实体
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/20 01:43
  */
 @Data

@@ -5,7 +5,7 @@ import lombok.Setter;
 
 /**
  * @Description: 角色查询条件
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/14 21:56
  */
 @Getter

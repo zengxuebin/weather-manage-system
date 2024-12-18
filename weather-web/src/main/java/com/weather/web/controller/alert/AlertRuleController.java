@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @Description: 预警规则
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/17 00:58
  */
 @RestController

@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @Description: Entity基类
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/28 09:50
  */
 @Setter

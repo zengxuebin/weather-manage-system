@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: 空气质量
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/16 10:33
  */
 @Data

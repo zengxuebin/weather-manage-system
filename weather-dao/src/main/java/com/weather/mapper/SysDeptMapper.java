@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @Description: 部门 mapper层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/9 09:32
  */
 @Mapper

@@ -25,7 +25,7 @@ import java.util.List;
 
 /**
  * @Description: 预警发布
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/17 07:40
  */
 @RestController

@@ -7,7 +7,7 @@ import java.util.Objects;
 
 /**
  * @Description: 权限信息
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/31 14:34
  */
 public class PermissionContextHolder {

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @Description: 预警规则 业务实现层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 04:10
  */
 @Service

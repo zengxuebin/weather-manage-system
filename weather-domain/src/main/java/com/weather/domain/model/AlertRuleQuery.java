@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @Description: 预警规则查询条件
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/17 01:00
  */
 @Data

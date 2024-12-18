@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @Description: 气象站 mapper层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 04:00
  */
 @Mapper

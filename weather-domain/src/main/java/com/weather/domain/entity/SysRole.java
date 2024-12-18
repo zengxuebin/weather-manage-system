@@ -10,7 +10,7 @@ import java.util.Set;
 
 /**
  * @Description: 角色表 sys_role
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/28 10:03
  */
 @EqualsAndHashCode(callSuper = true)

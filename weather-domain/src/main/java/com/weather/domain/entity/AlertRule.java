@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @Description: 预警规则
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/4 03:08
  */
 @EqualsAndHashCode(callSuper = true)

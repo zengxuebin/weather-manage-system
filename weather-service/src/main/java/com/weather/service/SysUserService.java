@@ -5,7 +5,7 @@ import com.weather.domain.entity.SysUser;
 
 /**
  * @Description: 用户 业务层
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/31 20:25
  */
 public interface SysUserService extends IService<SysUser> {

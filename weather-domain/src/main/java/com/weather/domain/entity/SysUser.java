@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @Description: 用户对象 sys_user
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/3/24 19:00
  */
 @EqualsAndHashCode(callSuper = true)

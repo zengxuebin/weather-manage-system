@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * @Description: 推送预警
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/18 10:44
  */
 @RestController

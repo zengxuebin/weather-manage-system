@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Description: 路由配置信息
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/8 23:11
  */
 @Data

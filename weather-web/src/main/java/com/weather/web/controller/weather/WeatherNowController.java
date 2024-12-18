@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @Description: 目前天气
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/16 08:25
  */
 @RestController

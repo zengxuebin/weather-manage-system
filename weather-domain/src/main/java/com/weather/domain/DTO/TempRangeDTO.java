@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * @Description: 温差
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/5/15 11:26
  */
 @Data

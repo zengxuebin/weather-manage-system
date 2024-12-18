@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * @Description: 数据字典信息
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/8 08:37
  */
 @RestController

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @Description: 注册校验
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/3 08:25
  */
 @Component

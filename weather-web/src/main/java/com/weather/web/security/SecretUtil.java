@@ -7,7 +7,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * @Description: 前端加密解密
- * @Author: ZengXueBin
+ * @Author: linkaixuan
  * @Date: 2023/4/22 22:15
  */
 public class SecretUtil {

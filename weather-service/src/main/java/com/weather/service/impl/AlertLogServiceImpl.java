@@ -7,9 +7,9 @@ import com.weather.service.AlertLogService;
 import org.springframework.stereotype.Service;
 
 /**
- * @Description: 预警记录 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:07
+ * 预警记录 业务实现层
+ * @author linkaixuan
+ * @since 2024/5/4 04:07
  */
 @Service
 public class AlertLogServiceImpl extends ServiceImpl<AlertLogMapper, AlertLog> implements AlertLogService {

@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * @Description: 预警信息
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:05
+ * 预警信息
+ * @author linkaixuan
+ * @since 2024/5/4 03:05
  */
 @NoArgsConstructor
 @AllArgsConstructor

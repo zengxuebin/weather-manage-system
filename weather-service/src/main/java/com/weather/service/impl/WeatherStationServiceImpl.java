@@ -14,9 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description: 气象站台 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:14
+ * 气象站台 业务实现层
+ * @author linkaixuan
+ * @since 2024/5/4 04:14
  */
 @Service
 public class WeatherStationServiceImpl extends ServiceImpl<WeatherStationMapper, WeatherStation> implements WeatherStationService {

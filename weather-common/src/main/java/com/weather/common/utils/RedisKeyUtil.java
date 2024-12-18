@@ -3,9 +3,9 @@ package com.weather.common.utils;
 import com.weather.common.constant.CacheConstants;
 
 /**
- * @Description: redis key工具类
- * @Author: linkaixuan
- * @Date: 2024/4/8 17:54
+ * redis key工具类
+ * @author linkaixuan
+ * @since 2024/4/8 17:54
  */
 public class RedisKeyUtil {
     private RedisKeyUtil() {

@@ -6,9 +6,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 /**
- * @Description: 部门表 sys_dept
- * @Author: linkaixuan
- * @Date: 2024/3/28 09:38
+ * 部门表 sys_dept
+ * @author linkaixuan
+ * @since 2024/3/28 09:38
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

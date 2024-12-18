@@ -8,9 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @Description: Entity基类
- * @Author: linkaixuan
- * @Date: 2024/3/28 09:50
+ * Entity基类
+ * @author linkaixuan
+ * @since 2024/3/28 09:50
  */
 @Setter
 @Getter

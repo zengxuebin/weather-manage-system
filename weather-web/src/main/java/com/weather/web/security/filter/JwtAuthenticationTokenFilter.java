@@ -17,9 +17,9 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 /**
- * @Description: token过滤器 验证其有效性
- * @Author: linkaixuan
- * @Date: 2024/4/3 09:32
+ * token过滤器 验证其有效性
+ * @author linkaixuan
+ * @since 2024/4/3 09:32
  */
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {

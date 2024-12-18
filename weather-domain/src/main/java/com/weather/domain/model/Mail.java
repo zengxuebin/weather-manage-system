@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @Description: Mail 实体
- * @Author: linkaixuan
- * @Date: 2024/5/20 01:43
+ * Mail 实体
+ * @author linkaixuan
+ * @since 2024/5/20 01:43
  */
 @Data
 @NoArgsConstructor

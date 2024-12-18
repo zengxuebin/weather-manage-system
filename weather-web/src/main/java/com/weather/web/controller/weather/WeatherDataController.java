@@ -27,9 +27,9 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @Description: 数据采集
- * @Author: linkaixuan
- * @Date: 2024/5/16 12:10
+ * 数据采集
+ * @author linkaixuan
+ * @since 2024/5/16 12:10
  */
 @RestController
 @RequestMapping("/weatherData")

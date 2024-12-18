@@ -9,9 +9,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
- * @Description: 预警规则
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:08
+ * 预警规则
+ * @author linkaixuan
+ * @since 2024/5/4 03:08
  */
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor

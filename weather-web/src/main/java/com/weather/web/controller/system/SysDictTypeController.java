@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @Description: 数据字典
- * @Author: linkaixuan
- * @Date: 2024/4/8 14:15
+ * 数据字典
+ * @author linkaixuan
+ * @since 2024/4/8 14:15
  */
 @RestController
 @RequestMapping("/system/dict/type")

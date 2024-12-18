@@ -27,6 +27,6 @@ class WeatherApplicationTests {
 
     @Test
     void testEncrypt() {
-        System.out.println(SecurityUtil.encryptPassword("caolonghui"));
+        System.out.println(SecurityUtil.encryptPassword("test"));
     }
 }

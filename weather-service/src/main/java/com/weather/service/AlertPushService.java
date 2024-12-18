@@ -7,9 +7,9 @@ import com.weather.domain.entity.SysUser;
 import java.util.List;
 
 /**
- * @Description: 预警推送 业务层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:02
+ * 预警推送 业务层
+ * @author linkaixuan
+ * @since 2024/5/4 04:02
  */
 public interface AlertPushService extends IService<AlertPush> {
 

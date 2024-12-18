@@ -7,9 +7,9 @@ import org.hibernate.validator.constraints.Length;
 import java.io.Serializable;
 
 /**
- * @Description: 用户登陆对象
- * @Author: linkaixuan
- * @Date: 2024/3/24 18:50
+ * 用户登陆对象
+ * @author linkaixuan
+ * @since 2024/3/24 18:50
  */
 @Data
 public class LoginBody implements Serializable {

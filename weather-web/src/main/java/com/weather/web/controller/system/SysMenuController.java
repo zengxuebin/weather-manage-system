@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @Description: 菜单信息
- * @Author: linkaixuan
- * @Date: 2024/4/9 14:23
+ * 菜单信息
+ * @author linkaixuan
+ * @since 2024/4/9 14:23
  */
 @RestController
 @RequestMapping("/system/menu")

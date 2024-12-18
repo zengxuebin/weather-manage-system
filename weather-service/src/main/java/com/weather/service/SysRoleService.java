@@ -6,9 +6,9 @@ import com.weather.domain.entity.SysRole;
 import java.util.Set;
 
 /**
- * @Description: 角色 业务层
- * @Author: linkaixuan
- * @Date: 2024/4/2 12:02
+ * 角色 业务层
+ * @author linkaixuan
+ * @since 2024/4/2 12:02
  */
 public interface SysRoleService extends IService<SysRole> {
 

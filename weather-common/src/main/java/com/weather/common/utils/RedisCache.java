@@ -11,9 +11,9 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Description: redis 工具类
- * @Author: linkaixuan
- * @Date: 2024/3/23 14:02
+ * redis 工具类
+ * @author linkaixuan
+ * @since 2024/3/23 14:02
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
 @Component

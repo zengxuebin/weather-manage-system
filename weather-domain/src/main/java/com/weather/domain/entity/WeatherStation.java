@@ -7,9 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Description: 气象站
- * @Author: linkaixuan
- * @Date: 2024/5/4 02:45
+ * 气象站
+ * @author linkaixuan
+ * @since 2024/5/4 02:45
  */
 @Data
 @NoArgsConstructor

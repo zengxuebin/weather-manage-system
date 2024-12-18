@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @Description: 目前天气
- * @Author: linkaixuan
- * @Date: 2024/5/16 08:25
+ * 目前天气
+ * @author linkaixuan
+ * @since 2024/5/16 08:25
  */
 @RestController
 @RequestMapping("/now")

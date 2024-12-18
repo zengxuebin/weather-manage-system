@@ -3,9 +3,9 @@ package com.weather.domain.DTO;
 import lombok.Data;
 
 /**
- * @Description: 实况天气
- * @Author: linkaixuan
- * @Date: 2024/5/16 10:35
+ * 实况天气
+ * @author linkaixuan
+ * @since 2024/5/16 10:35
  */
 @Data
 public class WeatherNowDTO {

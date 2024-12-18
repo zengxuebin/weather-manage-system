@@ -5,9 +5,9 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Description: 路由配置信息
- * @Author: linkaixuan
- * @Date: 2024/4/8 23:11
+ * 路由配置信息
+ * @author linkaixuan
+ * @since 2024/4/8 23:11
  */
 @Data
 public class RouterVO {

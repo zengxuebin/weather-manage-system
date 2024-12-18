@@ -7,9 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Description: 用户订阅
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:35
+ * 用户订阅
+ * @author linkaixuan
+ * @since 2024/5/4 03:35
  */
 @NoArgsConstructor
 @AllArgsConstructor

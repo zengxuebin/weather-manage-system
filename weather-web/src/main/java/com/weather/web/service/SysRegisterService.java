@@ -11,9 +11,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @Description: 注册校验
- * @Author: linkaixuan
- * @Date: 2024/4/3 08:25
+ * 注册校验
+ * @author linkaixuan
+ * @since 2024/4/3 08:25
  */
 @Component
 public class SysRegisterService {

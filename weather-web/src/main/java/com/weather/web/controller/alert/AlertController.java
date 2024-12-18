@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @Description: 预警
- * @Author: linkaixuan
- * @Date: 2024/5/18 09:24
+ * 预警
+ * @author linkaixuan
+ * @since 2024/5/18 09:24
  */
 @RestController
 @RequestMapping("/alert")

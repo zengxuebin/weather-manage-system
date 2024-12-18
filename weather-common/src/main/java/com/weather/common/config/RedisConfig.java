@@ -9,9 +9,9 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- * @Description: redis配置
- * @Author: linkaixuan
- * @Date: 2024/3/24 13:02
+ * redis配置
+ * @author linkaixuan
+ * @since 2024/3/24 13:02
  */
 @Configuration
 @EnableCaching

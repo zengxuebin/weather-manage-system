@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description: 首页
- * @Author: linkaixuan
- * @Date: 2024/4/9 12:05
+ * 首页
+ * @author linkaixuan
+ * @since 2024/4/9 12:05
  */
 @RestController
 public class SysIndexController {

@@ -8,9 +8,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Description: 推送预警记录
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:39
+ * 推送预警记录
+ * @author linkaixuan
+ * @since 2024/5/4 03:39
  */
 @NoArgsConstructor
 @AllArgsConstructor

@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @Description: 菜单 业务层
- * @Author: linkaixuan
- * @Date: 2024/4/2 20:38
+ * 菜单 业务层
+ * @author linkaixuan
+ * @since 2024/4/2 20:38
  */
 public interface SysMenuService extends IService<SysMenu> {
 

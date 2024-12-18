@@ -6,9 +6,9 @@ import org.springframework.web.context.request.RequestContextHolder;
 import java.util.Objects;
 
 /**
- * @Description: 权限信息
- * @Author: linkaixuan
- * @Date: 2024/3/31 14:34
+ * 权限信息
+ * @author linkaixuan
+ * @since 2024/3/31 14:34
  */
 public class PermissionContextHolder {
 

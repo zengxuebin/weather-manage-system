@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description: 注册
- * @Author: linkaixuan
- * @Date: 2024/4/9 20:53
+ * 
+ *
+ * 注册
+ * @author linkaixuan
+ * @since 2024/4/9 20:53
  */
 @RestController
 @RequestMapping("/auth")

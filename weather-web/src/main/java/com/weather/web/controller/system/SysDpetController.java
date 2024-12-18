@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @Description: 部门
- * @Author: linkaixuan
- * @Date: 2024/4/9 09:36
+ * 部门
+ * @author linkaixuan
+ * @since 2024/4/9 09:36
  */
 @RestController
 @RequestMapping("/system/dept")

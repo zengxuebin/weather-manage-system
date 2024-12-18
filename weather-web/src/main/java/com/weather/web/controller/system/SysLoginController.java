@@ -23,9 +23,9 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @Description: 登陆验证
- * @Author: linkaixuan
- * @Date: 2024/4/8 18:09
+ * 登陆验证
+ * @author linkaixuan
+ * @since 2024/4/8 18:09
  */
 @RestController
 @RequestMapping("/auth")

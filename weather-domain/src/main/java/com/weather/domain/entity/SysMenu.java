@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description: sys_menu 菜单权限表
- * @Author: linkaixuan
- * @Date: 2024/3/28 09:58
+ * sys_menu 菜单权限表
+ * @author linkaixuan
+ * @since 2024/3/28 09:58
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

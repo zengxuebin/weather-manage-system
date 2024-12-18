@@ -13,9 +13,9 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 /**
- * @Description: 预报
- * @Author: linkaixuan
- * @Date: 2024/5/15 20:29
+ * 预报
+ * @author linkaixuan
+ * @since 2024/5/15 20:29
  */
 @RestController
 @RequestMapping("/forecast")

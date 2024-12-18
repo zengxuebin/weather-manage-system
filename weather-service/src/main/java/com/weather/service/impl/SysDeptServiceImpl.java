@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @Description: 部门 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/4/9 09:33
+ * 部门 业务实现层
+ * @author linkaixuan
+ * @since 2024/4/9 09:33
  */
 @Service
 public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept> implements SysDeptService {

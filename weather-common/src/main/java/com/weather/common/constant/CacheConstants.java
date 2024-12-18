@@ -1,9 +1,9 @@
 package com.weather.common.constant;
 
 /**
- * @Description: 缓存key 常量
- * @Author: linkaixuan
- * @Date: 2024/3/23 11:47
+ * 缓存key 常量
+ * @author linkaixuan
+ * @since 2024/3/23 11:47
  */
 public class CacheConstants {
 

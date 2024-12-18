@@ -6,9 +6,9 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @Description: 温差
- * @Author: linkaixuan
- * @Date: 2024/5/15 11:26
+ * 温差
+ * @author linkaixuan
+ * @since 2024/5/15 11:26
  */
 @Data
 public class TempRangeDTO {

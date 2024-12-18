@@ -10,9 +10,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @Description: 用户权限处理
- * @Author: linkaixuan
- * @Date: 2024/4/2 11:56
+ * 用户权限处理
+ * @author linkaixuan
+ * @since 2024/4/2 11:56
  */
 @Component
 public class SysPermissionService {

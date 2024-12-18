@@ -6,9 +6,9 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @Description: 服务间结果集
- * @Author: linkaixuan
- * @Date: 2024/3/23 16:30
+ * 服务间结果集
+ * @author linkaixuan
+ * @since 2024/3/23 16:30
  */
 @Data
 public class ResponseResult<T> implements Serializable {

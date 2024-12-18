@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * @Description: 数据导出记录
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:30
+ * 数据导出记录
+ * @author linkaixuan
+ * @since 2024/5/4 03:30
  */
 @NoArgsConstructor
 @AllArgsConstructor

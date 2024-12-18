@@ -9,9 +9,9 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @Description: 气象站 mapper层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:00
+ * 气象站 mapper层
+ * @author linkaixuan
+ * @since 2024/5/4 04:00
  */
 @Mapper
 public interface WeatherStationMapper extends BaseMapper<WeatherStation> {

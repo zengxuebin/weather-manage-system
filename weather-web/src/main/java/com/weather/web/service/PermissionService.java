@@ -11,9 +11,9 @@ import org.springframework.util.CollectionUtils;
 import java.util.Set;
 
 /**
- * @Description: 权限
- * @Author: linkaixuan
- * @Date: 2024/3/31 13:58
+ * 权限
+ * @author linkaixuan
+ * @since 2024/3/31 13:58
  */
 @Service
 public class PermissionService {

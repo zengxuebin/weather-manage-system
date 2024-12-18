@@ -1,9 +1,9 @@
 package com.weather.common.enums;
 
 /**
- * @Description: 操作人类别
- * @Author: linkaixuan
- * @Date: 2024/3/24 18:35
+ * 操作人类别
+ * @author linkaixuan
+ * @since 2024/3/24 18:35
  */
 public enum OperatorTypeEnum {
 

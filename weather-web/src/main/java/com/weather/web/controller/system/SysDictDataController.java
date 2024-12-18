@@ -20,9 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description: 数据字典信息
- * @Author: linkaixuan
- * @Date: 2024/4/8 08:37
+ * 数据字典信息
+ * @author linkaixuan
+ * @since 2024/4/8 08:37
  */
 @RestController
 @RequestMapping("/system/dict/data")

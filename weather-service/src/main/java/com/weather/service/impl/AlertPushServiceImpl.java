@@ -25,9 +25,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @Description: 预警推送 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:08
+ * 预警推送 业务实现层
+ * @author linkaixuan
+ * @since 2024/5/4 04:08
  */
 @Service
 public class AlertPushServiceImpl extends ServiceImpl<AlertPushMapper, AlertPush> implements AlertPushService {

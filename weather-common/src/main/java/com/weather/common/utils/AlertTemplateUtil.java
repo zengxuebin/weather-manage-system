@@ -3,9 +3,9 @@ package com.weather.common.utils;
 import java.util.Map;
 
 /**
- * @Description: 预警信息模板
- * @Author: linkaixuan
- * @Date: 2024/5/17 19:32
+ * 预警信息模板
+ * @author linkaixuan
+ * @since 2024/5/17 19:32
  */
 public class AlertTemplateUtil {
 

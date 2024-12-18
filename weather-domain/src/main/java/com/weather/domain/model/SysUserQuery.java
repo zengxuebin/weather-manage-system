@@ -4,9 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * @Description: 用户分页查询条件
- * @Author: linkaixuan
- * @Date: 2024/4/9 16:34
+ * 用户分页查询条件
+ * @author linkaixuan
+ * @since 2024/4/9 16:34
  */
 @Getter
 @Setter

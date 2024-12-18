@@ -7,9 +7,9 @@ import com.weather.domain.entity.SysDictType;
 import java.util.List;
 
 /**
- * @Description: 字典类型 业务层
- * @Author: linkaixuan
- * @Date: 2024/4/8 08:46
+ * 字典类型 业务层
+ * @author linkaixuan
+ * @since 2024/4/8 08:46
  */
 public interface SysDictTypeService extends IService<SysDictType> {
 

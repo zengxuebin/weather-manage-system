@@ -4,9 +4,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.weather.domain.entity.SysDept;
 
 /**
- * @Description: 部门 业务层
- * @Author: linkaixuan
- * @Date: 2024/4/9 09:33
+ * 部门 业务层
+ * @author linkaixuan
+ * @since 2024/4/9 09:33
  */
 public interface SysDeptService extends IService<SysDept> {
 

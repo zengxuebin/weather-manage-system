@@ -5,9 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * @Description: 自定义异常
- * @Author: linkaixuan
- * @Date: 2024/3/30 15:39
+ * 自定义异常
+ * @author linkaixuan
+ * @since 2024/3/30 15:39
  */
 @Getter
 @Setter

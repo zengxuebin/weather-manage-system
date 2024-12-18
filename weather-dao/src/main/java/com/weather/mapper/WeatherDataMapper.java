@@ -8,9 +8,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 /**
- * @Description: 气象数据 mapper层
- * @Author: linkaixuan
- * @Date: 2024/5/4 03:58
+ * 气象数据 mapper层
+ * @author linkaixuan
+ * @since 2024/5/4 03:58
  */
 @Mapper
 public interface WeatherDataMapper extends BaseMapper<WeatherData> {

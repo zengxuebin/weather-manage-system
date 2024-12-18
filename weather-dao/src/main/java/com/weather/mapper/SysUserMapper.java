@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @Description: 用户类 mapper
- * @Author: linkaixuan
- * @Date: 2024/4/1 22:40
+ * 用户类 mapper
+ * @author linkaixuan
+ * @since 2024/4/1 22:40
  */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {

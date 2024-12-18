@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @Description: 菜单 mapper层
- * @Author: linkaixuan
- * @Date: 2024/4/2 12:04
+ * 菜单 mapper层
+ * @author linkaixuan
+ * @since 2024/4/2 12:04
  */
 @Mapper
 public interface SysMenuMapper extends BaseMapper<SysMenu> {

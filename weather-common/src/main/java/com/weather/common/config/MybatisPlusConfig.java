@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
- * @Description: mybatis-plus 配置类
- * @Author: linkaixuan
- * @Date: 2024/4/1 09:49
+ * mybatis-plus 配置类
+ * @author linkaixuan
+ * @since 2024/4/1 09:49
  */
 @Configuration
 @EnableTransactionManagement

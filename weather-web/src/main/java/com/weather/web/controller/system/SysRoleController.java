@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description: 角色
- * @Author: linkaixuan
- * @Date: 2024/5/14 21:53
+ * 角色
+ * @author linkaixuan
+ * @since 2024/5/14 21:53
  */
 @RestController
 @RequestMapping("/system/role")

@@ -5,9 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @Description: 项目相关配置
- * @Author: linkaixuan
- * @Date: 2024/3/23 12:01
+ * 项目相关配置
+ * @author linkaixuan
+ * @since 2024/3/23 12:01
  */
 @Component
 @Data

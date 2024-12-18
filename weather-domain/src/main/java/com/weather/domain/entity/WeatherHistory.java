@@ -10,9 +10,9 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * @Description: 历史天气统计表
- * @Author: linkaixuan
- * @Date: 2024/5/15 09:19
+ * 历史天气统计表
+ * @author linkaixuan
+ * @since 2024/5/15 09:19
  */
 @NoArgsConstructor
 @AllArgsConstructor

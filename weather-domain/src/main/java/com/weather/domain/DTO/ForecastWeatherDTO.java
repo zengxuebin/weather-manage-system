@@ -6,9 +6,9 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @Description: 预测天气
- * @Author: linkaixuan
- * @Date: 2024/5/15 21:27
+ * 预测天气
+ * @author linkaixuan
+ * @since 2024/5/15 21:27
  */
 @Data
 @AllArgsConstructor

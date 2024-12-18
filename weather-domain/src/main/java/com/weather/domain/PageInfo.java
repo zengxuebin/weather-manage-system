@@ -6,9 +6,9 @@ import lombok.Setter;
 import java.io.Serializable;
 
 /**
- * @Description: 分页查询条件 基类
- * @Author: linkaixuan
- * @Date: 2024/4/8 09:55
+ * 分页查询条件 基类
+ * @author linkaixuan
+ * @since 2024/4/8 09:55
  */
 @Getter
 @Setter

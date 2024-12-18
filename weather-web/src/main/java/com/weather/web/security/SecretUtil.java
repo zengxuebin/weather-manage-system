@@ -6,9 +6,9 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * @Description: 前端加密解密
- * @Author: linkaixuan
- * @Date: 2024/4/22 22:15
+ * 前端加密解密
+ * @author linkaixuan
+ * @since 2024/4/22 22:15
  */
 public class SecretUtil {
 

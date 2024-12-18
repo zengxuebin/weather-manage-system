@@ -1,9 +1,9 @@
 package com.weather.common.enums;
 
 /**
- * @Description: 操作状态
- * @Author: linkaixuan
- * @Date: 2024/3/24 18:37
+ * 操作状态
+ * @author linkaixuan
+ * @since 2024/3/24 18:37
  */
 public enum OperatorStatusEnum {
 

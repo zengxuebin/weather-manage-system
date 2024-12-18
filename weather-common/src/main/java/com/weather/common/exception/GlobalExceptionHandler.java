@@ -13,9 +13,9 @@ import java.nio.file.AccessDeniedException;
 import java.util.Objects;
 
 /**
- * @Description: 全局异常处理器
- * @Author: linkaixuan
- * @Date: 2024/3/30 15:28
+ * 全局异常处理器
+ * @author linkaixuan
+ * @since 2024/3/30 15:28
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {

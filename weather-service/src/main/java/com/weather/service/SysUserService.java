@@ -4,9 +4,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.weather.domain.entity.SysUser;
 
 /**
- * @Description: 用户 业务层
- * @Author: linkaixuan
- * @Date: 2024/3/31 20:25
+ * 用户 业务层
+ * @author linkaixuan
+ * @since 2024/3/31 20:25
  */
 public interface SysUserService extends IService<SysUser> {
 

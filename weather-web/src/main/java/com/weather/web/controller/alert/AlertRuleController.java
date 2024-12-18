@@ -13,9 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @Description: 预警规则
- * @Author: linkaixuan
- * @Date: 2024/5/17 00:58
+ * 预警规则
+ * @author linkaixuan
+ * @since 2024/5/17 00:58
  */
 @RestController
 @RequestMapping("/alert/rule")

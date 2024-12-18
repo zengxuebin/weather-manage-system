@@ -25,9 +25,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 /**
- * @Description: 预警信息 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:12
+ * 预警信息 业务实现层
+ * @author linkaixuan
+ * @since 2024/5/4 04:12
  */
 @Service
 public class WeatherAlertServiceImpl extends ServiceImpl<WeatherAlertMapper, WeatherAlert> implements WeatherAlertService {

@@ -1,9 +1,9 @@
 package com.weather.common.constant;
 
 /**
- * @Description: 预警状态常量
- * @Author: linkaixuan
- * @Date: 2024/5/17 13:32
+ * 预警状态常量
+ * @author linkaixuan
+ * @since 2024/5/17 13:32
  */
 public class AlertStatusConstants {
 

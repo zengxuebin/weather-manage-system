@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * @Description: 字典 业务处理层
- * @Author: linkaixuan
- * @Date: 2024/4/8 08:41
+ * 字典 业务处理层
+ * @author linkaixuan
+ * @since 2024/4/8 08:41
  */
 @Service
 public class SysDictDataServiceImpl extends ServiceImpl<SysDictDataMapper, SysDictData> implements SysDictDataService {

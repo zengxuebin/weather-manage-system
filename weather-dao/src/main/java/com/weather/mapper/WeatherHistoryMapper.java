@@ -11,9 +11,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description: 历史天气 mapper层
- * @Author: linkaixuan
- * @Date: 2024/5/15 09:24
+ * 历史天气 mapper层
+ * @author linkaixuan
+ * @since 2024/5/15 09:24
  */
 @Mapper
 public interface WeatherHistoryMapper extends BaseMapper<WeatherHistory> {

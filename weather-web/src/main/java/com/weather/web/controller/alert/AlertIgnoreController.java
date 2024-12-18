@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @Description: 忽略预警
- * @Author: linkaixuan
- * @Date: 2024/5/17 23:04
+ * 忽略预警
+ * @author linkaixuan
+ * @since 2024/5/17 23:04
  */
 @RestController
 @RequestMapping("/alert/ignore")

@@ -5,9 +5,9 @@ import com.weather.common.constant.HttpStatus;
 import java.util.HashMap;
 
 /**
- * @Description: 返回前端结果集
- * @Author: linkaixuan
- * @Date: 2024/3/23 15:46
+ * 返回前端结果集
+ * @author linkaixuan
+ * @since 2024/3/23 15:46
  */
 public class ApiResult extends HashMap<String, Object> {
 

@@ -7,9 +7,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 /**
- * @Description: 气象数据 业务层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:05
+ * 气象数据 业务层
+ * @author linkaixuan
+ * @since 2024/5/4 04:05
  */
 public interface WeatherDataService extends IService<WeatherData> {
     /**

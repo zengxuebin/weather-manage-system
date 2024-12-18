@@ -3,9 +3,9 @@ package com.weather.web.security.context;
 import org.springframework.security.core.Authentication;
 
 /**
- * @Description: 身份认证信息
- * @Author: linkaixuan
- * @Date: 2024/3/31 14:29
+ * 身份认证信息
+ * @author linkaixuan
+ * @since 2024/3/31 14:29
  */
 public class AuthenticationContextHolder {
 

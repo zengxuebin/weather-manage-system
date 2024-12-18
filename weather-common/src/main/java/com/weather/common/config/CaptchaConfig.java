@@ -11,9 +11,9 @@ import static com.google.code.kaptcha.Constants.*;
 
 
 /**
- * @Description: 验证码配置
- * @Author: linkaixuan
- * @Date: 2024/3/24 13:19
+ * 验证码配置
+ * @author linkaixuan
+ * @since 2024/3/24 13:19
  */
 @Configuration
 public class CaptchaConfig {

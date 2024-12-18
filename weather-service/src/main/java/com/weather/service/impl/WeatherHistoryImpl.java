@@ -14,9 +14,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description: 历史天气 业务实现层
- * @Author: linkaixuan
- * @Date: 2024/5/15 09:25
+ * 历史天气 业务实现层
+ * @author linkaixuan
+ * @since 2024/5/15 09:25
  */
 @Service
 public class WeatherHistoryImpl extends ServiceImpl<WeatherHistoryMapper, WeatherHistory> implements WeatherHistoryService {

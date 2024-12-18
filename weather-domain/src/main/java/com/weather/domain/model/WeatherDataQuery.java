@@ -3,9 +3,9 @@ package com.weather.domain.model;
 import lombok.Data;
 
 /**
- * @Description: 气象数据条件
- * @Author: linkaixuan
- * @Date: 2024/5/16 14:32
+ * 气象数据条件
+ * @author linkaixuan
+ * @since 2024/5/16 14:32
  */
 @Data
 public class WeatherDataQuery {

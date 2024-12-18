@@ -5,9 +5,9 @@ import com.aliyun.teaopenapi.models.Config;
 import com.weather.common.constant.AliSmsConstants;
 
 /**
- * @Description: 阿里短信发送工具类
- * @Author: linkaixuan
- * @Date: 2024/5/20 00:01
+ * 阿里短信发送工具类
+ * @author linkaixuan
+ * @since 2024/5/20 00:01
  */
 public class AliSmsUtil {
 

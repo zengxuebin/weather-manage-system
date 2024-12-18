@@ -6,9 +6,9 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @Description: 历史天气统计条件
- * @Author: linkaixuan
- * @Date: 2024/5/15 09:31
+ * 历史天气统计条件
+ * @author linkaixuan
+ * @since 2024/5/15 09:31
  */
 @Data
 public class HistoryBody {

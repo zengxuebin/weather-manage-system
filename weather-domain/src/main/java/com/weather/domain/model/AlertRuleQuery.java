@@ -3,9 +3,9 @@ package com.weather.domain.model;
 import lombok.Data;
 
 /**
- * @Description: 预警规则查询条件
- * @Author: linkaixuan
- * @Date: 2024/5/17 01:00
+ * 预警规则查询条件
+ * @author linkaixuan
+ * @since 2024/5/17 01:00
  */
 @Data
 public class AlertRuleQuery {

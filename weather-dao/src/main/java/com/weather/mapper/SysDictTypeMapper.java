@@ -5,9 +5,9 @@ import com.weather.domain.entity.SysDictType;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
- * @Description: 字典类型 mapper层
- * @Author: linkaixuan
- * @Date: 2024/4/8 08:45
+ * 字典类型 mapper层
+ * @author linkaixuan
+ * @since 2024/4/8 08:45
  */
 @Mapper
 public interface SysDictTypeMapper extends BaseMapper<SysDictType> {

@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description: 历史天气 业务层
- * @Author: linkaixuan
- * @Date: 2024/5/15 09:25
+ * 历史天气 业务层
+ * @author linkaixuan
+ * @since 2024/5/15 09:25
  */
 public interface WeatherHistoryService extends IService<WeatherHistory> {
 

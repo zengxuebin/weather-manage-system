@@ -19,9 +19,9 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * @Description: 登陆校验
- * @Author: linkaixuan
- * @Date: 2024/3/31 20:19
+ * 登陆校验
+ * @author linkaixuan
+ * @since 2024/3/31 20:19
  */
 @Component
 public class SysLoginService {

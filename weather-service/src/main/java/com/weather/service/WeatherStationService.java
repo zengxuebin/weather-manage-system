@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Description: 气象站台 业务层
- * @Author: linkaixuan
- * @Date: 2024/5/4 04:06
+ * 气象站台 业务层
+ * @author linkaixuan
+ * @since 2024/5/4 04:06
  */
 public interface WeatherStationService extends IService<WeatherStation> {
 

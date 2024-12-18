@@ -11,9 +11,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 /**
- * @Description: 登陆密码
- * @Author: linkaixuan
- * @Date: 2024/3/31 20:09
+ * 登陆密码
+ * @author linkaixuan
+ * @since 2024/3/31 20:09
  */
 @Component
 public class SysPasswordService {

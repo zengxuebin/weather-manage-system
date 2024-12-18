@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
- * @Description: 路由显示信息
- * @Author: linkaixuan
- * @Date: 2024/4/9 08:29
+ * 路由显示信息
+ * @author linkaixuan
+ * @since 2024/4/9 08:29
  */
 @AllArgsConstructor
 @Data

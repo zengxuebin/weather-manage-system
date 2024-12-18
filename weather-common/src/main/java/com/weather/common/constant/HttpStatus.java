@@ -1,9 +1,9 @@
 package com.weather.common.constant;
 
 /**
- * @Description: 返回状态码
- * @Author: linkaixuan
- * @Date: 2024/3/23 11:41
+ * 返回状态码
+ * @author linkaixuan
+ * @since 2024/3/23 11:41
  */
 public class HttpStatus {
 

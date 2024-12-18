@@ -26,9 +26,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @Description: 字典类型 业务处理层
- * @Author: linkaixuan
- * @Date: 2024/4/8 08:46
+ * 字典类型 业务处理层
+ * @author linkaixuan
+ * @since 2024/4/8 08:46
  */
 @Service
 public class SysDictTypeServiceImpl extends ServiceImpl<SysDictTypeMapper, SysDictType> implements SysDictTypeService {

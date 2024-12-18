@@ -5,6 +5,7 @@ import com.weather.common.utils.ApiResult;
 import com.weather.common.utils.RedisCache;
 import com.weather.common.utils.RedisKeyUtil;
 import com.google.code.kaptcha.Producer;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.FastByteArrayOutputStream;
@@ -23,6 +24,7 @@ import java.util.concurrent.TimeUnit;
  * @author linkaixuan
  * @since 2024/4/3 18:06
  */
+@Slf4j
 @RestController
 @RequestMapping("/code")
 public class CaptchaController {
@@ -45,14 +47,15 @@ public class CaptchaController {
         String uuid = UUID.randomUUID().toString().replace("-", "");
         String verifyKey = RedisKeyUtil.getCaptchaKey(uuid);
 
-        String capStr = null;
-        String code = null;
-        BufferedImage image = null;
+        String capStr;
+        String code;
+        BufferedImage image;
 
         capStr = code = captchaProducer.createText();
         image = captchaProducer.createImage(capStr);
 
         redisCache.setCacheObject(verifyKey, code, Constants.CAPTCHA_EXPIRATION, TimeUnit.MINUTES);
+        log.info("captcha code is: {}", code);
 
         FastByteArrayOutputStream outputStream = new FastByteArrayOutputStream();
         try {

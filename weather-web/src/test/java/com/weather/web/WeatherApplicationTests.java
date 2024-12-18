@@ -1,5 +1,6 @@
 package com.weather.web;
 
+import com.weather.common.utils.SecurityUtil;
 import com.weather.service.AlertPushService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ class WeatherApplicationTests {
     private AlertPushService alertPushService;
 
     @Test
-    public void testPwd() {
+    void testEncrypt() {
+        System.out.println(SecurityUtil.encryptPassword("caolonghui"));
     }
 }

@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * @Description: 用户登陆对象
  * @Author: linkaixuan
- * @Date: 2023/3/24 18:50
+ * @Date: 2024/3/24 18:50
  */
 @Data
 public class LoginBody implements Serializable {

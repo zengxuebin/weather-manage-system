@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * @Description: 历史天气 mapper层
  * @Author: linkaixuan
- * @Date: 2023/5/15 09:24
+ * @Date: 2024/5/15 09:24
  */
 @Mapper
 public interface WeatherHistoryMapper extends BaseMapper<WeatherHistory> {

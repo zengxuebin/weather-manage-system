@@ -3,7 +3,7 @@ package com.weather.common.constant;
 /**
  * @Description: 通用常量
  * @Author: linkaixuan
- * @Date: 2023/3/30 17:54
+ * @Date: 2024/3/30 17:54
  */
 public class Constants {
 

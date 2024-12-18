@@ -6,7 +6,7 @@ import lombok.Setter;
 /**
  * @Description: 角色查询条件
  * @Author: linkaixuan
- * @Date: 2023/5/14 21:56
+ * @Date: 2024/5/14 21:56
  */
 @Getter
 @Setter

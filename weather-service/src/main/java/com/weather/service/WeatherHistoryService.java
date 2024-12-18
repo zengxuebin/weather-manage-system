@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @Description: 历史天气 业务层
  * @Author: linkaixuan
- * @Date: 2023/5/15 09:25
+ * @Date: 2024/5/15 09:25
  */
 public interface WeatherHistoryService extends IService<WeatherHistory> {
 

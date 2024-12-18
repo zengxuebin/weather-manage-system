@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @Description: 目前天气
  * @Author: linkaixuan
- * @Date: 2023/5/16 08:25
+ * @Date: 2024/5/16 08:25
  */
 @RestController
 @RequestMapping("/now")

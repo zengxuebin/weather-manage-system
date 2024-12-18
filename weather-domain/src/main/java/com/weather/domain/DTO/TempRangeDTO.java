@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * @Description: 温差
  * @Author: linkaixuan
- * @Date: 2023/5/15 11:26
+ * @Date: 2024/5/15 11:26
  */
 @Data
 public class TempRangeDTO {

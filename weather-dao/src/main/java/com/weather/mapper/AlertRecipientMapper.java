@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * @Description: 预警接收 mapper层
  * @Author: linkaixuan
- * @Date: 2023/5/4 03:56
+ * @Date: 2024/5/4 03:56
  */
 @Mapper
 public interface AlertRecipientMapper extends BaseMapper<AlertRecipient> {

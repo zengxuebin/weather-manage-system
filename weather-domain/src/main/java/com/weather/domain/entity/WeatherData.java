@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * @Description: 气象数据表
  * @Author: linkaixuan
- * @Date: 2023/5/4 02:42
+ * @Date: 2024/5/4 02:42
  */
 @Data
 @NoArgsConstructor

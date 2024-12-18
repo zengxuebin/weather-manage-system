@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * @Description: 历史天气统计条件
  * @Author: linkaixuan
- * @Date: 2023/5/15 09:31
+ * @Date: 2024/5/15 09:31
  */
 @Data
 public class HistoryBody {

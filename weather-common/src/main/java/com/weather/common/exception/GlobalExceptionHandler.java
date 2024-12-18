@@ -15,7 +15,7 @@ import java.util.Objects;
 /**
  * @Description: 全局异常处理器
  * @Author: linkaixuan
- * @Date: 2023/3/30 15:28
+ * @Date: 2024/3/30 15:28
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {

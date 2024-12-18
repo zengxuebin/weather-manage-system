@@ -6,7 +6,7 @@ import lombok.Setter;
 /**
  * @Description: 字典分页查询条件
  * @Author: linkaixuan
- * @Date: 2023/4/8 09:59
+ * @Date: 2024/4/8 09:59
  */
 @Getter
 @Setter

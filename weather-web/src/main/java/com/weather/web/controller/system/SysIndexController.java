@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @Description: 首页
  * @Author: linkaixuan
- * @Date: 2023/4/9 12:05
+ * @Date: 2024/4/9 12:05
  */
 @RestController
 public class SysIndexController {

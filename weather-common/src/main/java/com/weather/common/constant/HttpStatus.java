@@ -3,7 +3,7 @@ package com.weather.common.constant;
 /**
  * @Description: 返回状态码
  * @Author: linkaixuan
- * @Date: 2023/3/23 11:41
+ * @Date: 2024/3/23 11:41
  */
 public class HttpStatus {
 

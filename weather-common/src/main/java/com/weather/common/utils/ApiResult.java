@@ -7,7 +7,7 @@ import java.util.HashMap;
 /**
  * @Description: 返回前端结果集
  * @Author: linkaixuan
- * @Date: 2023/3/23 15:46
+ * @Date: 2024/3/23 15:46
  */
 public class ApiResult extends HashMap<String, Object> {
 

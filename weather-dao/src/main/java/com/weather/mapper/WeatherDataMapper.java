@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @Description: 气象数据 mapper层
  * @Author: linkaixuan
- * @Date: 2023/5/4 03:58
+ * @Date: 2024/5/4 03:58
  */
 @Mapper
 public interface WeatherDataMapper extends BaseMapper<WeatherData> {

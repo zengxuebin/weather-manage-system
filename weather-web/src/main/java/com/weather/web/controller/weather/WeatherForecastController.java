@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @Description: 预报
  * @Author: linkaixuan
- * @Date: 2023/5/15 20:29
+ * @Date: 2024/5/15 20:29
  */
 @RestController
 @RequestMapping("/forecast")

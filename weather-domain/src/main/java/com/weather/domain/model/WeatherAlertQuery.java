@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @Description: 预警信息查询条件
  * @Author: linkaixuan
- * @Date: 2023/5/17 07:46
+ * @Date: 2024/5/17 07:46
  */
 @Data
 public class WeatherAlertQuery {

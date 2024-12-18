@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @Description: redis 工具类
  * @Author: linkaixuan
- * @Date: 2023/3/23 14:02
+ * @Date: 2024/3/23 14:02
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
 @Component

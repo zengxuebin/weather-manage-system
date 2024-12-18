@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * @Description: 历史天气统计
  * @Author: linkaixuan
- * @Date: 2023/5/15 09:36
+ * @Date: 2024/5/15 09:36
  */
 @Data
 public class WeatherHistoryDTO {

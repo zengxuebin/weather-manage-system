@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 /**
  * @Description: 用户验证处理
  * @Author: linkaixuan
- * @Date: 2023/4/3 08:59
+ * @Date: 2024/4/3 08:59
  */
 @Service
 public class UserDetailServiceImpl implements UserDetailsService {

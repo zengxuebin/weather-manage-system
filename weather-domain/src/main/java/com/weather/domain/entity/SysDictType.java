@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 /**
  * @Description: 字典类型表 sys_dict_type
  * @Author: linkaixuan
- * @Date: 2023/3/24 20:23
+ * @Date: 2024/3/24 20:23
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

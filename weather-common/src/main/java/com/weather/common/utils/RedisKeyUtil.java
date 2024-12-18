@@ -5,7 +5,7 @@ import com.weather.common.constant.CacheConstants;
 /**
  * @Description: redis key工具类
  * @Author: linkaixuan
- * @Date: 2023/4/8 17:54
+ * @Date: 2024/4/8 17:54
  */
 public class RedisKeyUtil {
     private RedisKeyUtil() {

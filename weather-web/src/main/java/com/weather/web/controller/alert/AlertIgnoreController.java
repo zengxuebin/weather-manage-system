@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @Description: 忽略预警
  * @Author: linkaixuan
- * @Date: 2023/5/17 23:04
+ * @Date: 2024/5/17 23:04
  */
 @RestController
 @RequestMapping("/alert/ignore")

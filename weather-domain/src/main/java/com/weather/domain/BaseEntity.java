@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * @Description: Entity基类
  * @Author: linkaixuan
- * @Date: 2023/3/28 09:50
+ * @Date: 2024/3/28 09:50
  */
 @Setter
 @Getter

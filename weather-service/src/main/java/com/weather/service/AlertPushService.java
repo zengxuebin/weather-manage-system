@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Description: 预警推送 业务层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:02
+ * @Date: 2024/5/4 04:02
  */
 public interface AlertPushService extends IService<AlertPush> {
 

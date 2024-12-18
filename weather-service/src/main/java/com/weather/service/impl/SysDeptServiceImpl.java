@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 /**
  * @Description: 部门 业务实现层
  * @Author: linkaixuan
- * @Date: 2023/4/9 09:33
+ * @Date: 2024/4/9 09:33
  */
 @Service
 public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept> implements SysDeptService {

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Description: 气象数据 业务层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:05
+ * @Date: 2024/5/4 04:05
  */
 public interface WeatherDataService extends IService<WeatherData> {
     /**

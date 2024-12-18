@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * @Description: 预警记录日志
  * @Author: linkaixuan
- * @Date: 2023/5/4 03:48
+ * @Date: 2024/5/4 03:48
  */
 @NoArgsConstructor
 @AllArgsConstructor

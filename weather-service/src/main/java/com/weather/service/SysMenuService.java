@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * @Description: 菜单 业务层
  * @Author: linkaixuan
- * @Date: 2023/4/2 20:38
+ * @Date: 2024/4/2 20:38
  */
 public interface SysMenuService extends IService<SysMenu> {
 

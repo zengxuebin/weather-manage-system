@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * @Description: 部门
  * @Author: linkaixuan
- * @Date: 2023/4/9 09:36
+ * @Date: 2024/4/9 09:36
  */
 @RestController
 @RequestMapping("/system/dept")

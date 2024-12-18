@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @Description: 字典 业务处理层
  * @Author: linkaixuan
- * @Date: 2023/4/8 08:41
+ * @Date: 2024/4/8 08:41
  */
 @Service
 public class SysDictDataServiceImpl extends ServiceImpl<SysDictDataMapper, SysDictData> implements SysDictDataService {

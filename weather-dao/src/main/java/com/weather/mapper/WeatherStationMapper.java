@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @Description: 气象站 mapper层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:00
+ * @Date: 2024/5/4 04:00
  */
 @Mapper
 public interface WeatherStationMapper extends BaseMapper<WeatherStation> {

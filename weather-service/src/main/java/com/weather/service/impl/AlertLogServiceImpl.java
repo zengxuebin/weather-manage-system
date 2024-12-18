@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * @Description: 预警记录 业务实现层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:07
+ * @Date: 2024/5/4 04:07
  */
 @Service
 public class AlertLogServiceImpl extends ServiceImpl<AlertLogMapper, AlertLog> implements AlertLogService {

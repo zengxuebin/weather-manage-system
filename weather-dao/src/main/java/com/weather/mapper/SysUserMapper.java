@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Description: 用户类 mapper
  * @Author: linkaixuan
- * @Date: 2023/4/1 22:40
+ * @Date: 2024/4/1 22:40
  */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {

@@ -3,7 +3,7 @@ package com.weather.common.constant;
 /**
  * @Description: 预警状态常量
  * @Author: linkaixuan
- * @Date: 2023/5/17 13:32
+ * @Date: 2024/5/17 13:32
  */
 public class AlertStatusConstants {
 

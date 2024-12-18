@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * @Description: 预警规则 业务实现层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:10
+ * @Date: 2024/5/4 04:10
  */
 @Service
 public class AlertRuleServiceImpl extends ServiceImpl<AlertRuleMapper, AlertRule> implements AlertRuleService {

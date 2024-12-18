@@ -3,7 +3,7 @@ package com.weather.common.enums;
 /**
  * @Description: 操作人类别
  * @Author: linkaixuan
- * @Date: 2023/3/24 18:35
+ * @Date: 2024/3/24 18:35
  */
 public enum OperatorTypeEnum {
 

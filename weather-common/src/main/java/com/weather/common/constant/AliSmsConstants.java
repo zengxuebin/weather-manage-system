@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * @Description: 阿里短信常量
  * @Author: linkaixuan
- * @Date: 2023/5/20 00:09
+ * @Date: 2024/5/20 00:09
  */
 @Data
 @Component

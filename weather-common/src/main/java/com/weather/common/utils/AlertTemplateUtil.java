@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * @Description: 预警信息模板
  * @Author: linkaixuan
- * @Date: 2023/5/17 19:32
+ * @Date: 2024/5/17 19:32
  */
 public class AlertTemplateUtil {
 

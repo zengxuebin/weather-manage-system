@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * @Description: 数据字典
  * @Author: linkaixuan
- * @Date: 2023/4/8 14:15
+ * @Date: 2024/4/8 14:15
  */
 @RestController
 @RequestMapping("/system/dict/type")

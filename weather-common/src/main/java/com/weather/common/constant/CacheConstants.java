@@ -3,7 +3,7 @@ package com.weather.common.constant;
 /**
  * @Description: 缓存key 常量
  * @Author: linkaixuan
- * @Date: 2023/3/23 11:47
+ * @Date: 2024/3/23 11:47
  */
 public class CacheConstants {
 

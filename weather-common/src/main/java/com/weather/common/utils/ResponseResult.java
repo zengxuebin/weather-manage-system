@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * @Description: 服务间结果集
  * @Author: linkaixuan
- * @Date: 2023/3/23 16:30
+ * @Date: 2024/3/23 16:30
  */
 @Data
 public class ResponseResult<T> implements Serializable {

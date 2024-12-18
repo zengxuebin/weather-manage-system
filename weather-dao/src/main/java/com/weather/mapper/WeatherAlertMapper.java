@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 /**
  * @Description: 预警信息 mapper层
  * @Author: linkaixuan
- * @Date: 2023/5/4 03:58
+ * @Date: 2024/5/4 03:58
  */
 @Mapper
 public interface WeatherAlertMapper extends BaseMapper<WeatherAlert> {

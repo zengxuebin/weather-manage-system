@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * @Description: 历史天气
  * @Author: linkaixuan
- * @Date: 2023/5/15 09:27
+ * @Date: 2024/5/15 09:27
  */
 @RestController
 @RequestMapping("/history")

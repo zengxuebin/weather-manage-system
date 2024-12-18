@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * @Description: 字典类型 mapper层
  * @Author: linkaixuan
- * @Date: 2023/4/8 08:45
+ * @Date: 2024/4/8 08:45
  */
 @Mapper
 public interface SysDictTypeMapper extends BaseMapper<SysDictType> {

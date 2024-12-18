@@ -13,7 +13,7 @@ import static com.google.code.kaptcha.Constants.*;
 /**
  * @Description: 验证码配置
  * @Author: linkaixuan
- * @Date: 2023/3/24 13:19
+ * @Date: 2024/3/24 13:19
  */
 @Configuration
 public class CaptchaConfig {

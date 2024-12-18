@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * @Description: sys_menu 菜单权限表
  * @Author: linkaixuan
- * @Date: 2023/3/28 09:58
+ * @Date: 2024/3/28 09:58
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

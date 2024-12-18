@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @Description: 字典 业务层
  * @Author: linkaixuan
- * @Date: 2023/4/8 08:40
+ * @Date: 2024/4/8 08:40
  */
 public interface SysDictDataService extends IService<SysDictData> {
 

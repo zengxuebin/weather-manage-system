@@ -27,7 +27,7 @@ import java.util.List;
 /**
  * @Description: 预警推送 业务实现层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:08
+ * @Date: 2024/5/4 04:08
  */
 @Service
 public class AlertPushServiceImpl extends ServiceImpl<AlertPushMapper, AlertPush> implements AlertPushService {

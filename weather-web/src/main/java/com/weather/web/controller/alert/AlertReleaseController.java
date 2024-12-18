@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * @Description: 预警发布
  * @Author: linkaixuan
- * @Date: 2023/5/17 07:40
+ * @Date: 2024/5/17 07:40
  */
 @RestController
 @RequestMapping("/alert/release")

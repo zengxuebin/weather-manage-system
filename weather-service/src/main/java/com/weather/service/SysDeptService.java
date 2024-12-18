@@ -6,7 +6,7 @@ import com.weather.domain.entity.SysDept;
 /**
  * @Description: 部门 业务层
  * @Author: linkaixuan
- * @Date: 2023/4/9 09:33
+ * @Date: 2024/4/9 09:33
  */
 public interface SysDeptService extends IService<SysDept> {
 

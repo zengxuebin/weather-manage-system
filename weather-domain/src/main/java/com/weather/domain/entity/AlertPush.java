@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 /**
  * @Description: 推送预警记录
  * @Author: linkaixuan
- * @Date: 2023/5/4 03:39
+ * @Date: 2024/5/4 03:39
  */
 @NoArgsConstructor
 @AllArgsConstructor

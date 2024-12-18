@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * @Description: fastjson 配置类
  * @Author: linkaixuan
- * @Date: 2023/4/2 11:20
+ * @Date: 2024/4/2 11:20
  */
 @Configuration
 public class JsonWebMvcConfigurer implements WebMvcConfigurer {

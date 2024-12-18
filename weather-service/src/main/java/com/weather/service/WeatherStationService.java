@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * @Description: 气象站台 业务层
  * @Author: linkaixuan
- * @Date: 2023/5/4 04:06
+ * @Date: 2024/5/4 04:06
  */
 public interface WeatherStationService extends IService<WeatherStation> {
 

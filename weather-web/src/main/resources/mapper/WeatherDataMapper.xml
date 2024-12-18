@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.weather.mapper.WeatherDataMapper">
-    <select id="getLatestDataForEachStation" resultType="entity.com.weather.domain.WeatherData">
+    <select id="getLatestDataForEachStation" resultType="com.weather.domain.entity.WeatherData">
         SELECT *
         FROM t_weather_data
         WHERE is_handled = '1'

@@ -5,7 +5,7 @@
 
 <mapper namespace="com.weather.mapper.WeatherHistoryMapper">
 
-    <select id="statisticsWeatherHistory" resultType="DTO.com.weather.domain.WeatherHistoryDTO">
+    <select id="statisticsWeatherHistory" resultType="com.weather.domain.DTO.WeatherHistoryDTO">
         SELECT
             MAX(temp_max) AS maxTemp,
             MIN(temp_min) AS minTemp,
@@ -21,7 +21,7 @@
             station_city = #{nowCity}
     </select>
 
-    <select id="selectTemperatureRange" resultType="DTO.com.weather.domain.TempRangeDTO">
+    <select id="selectTemperatureRange" resultType="com.weather.domain.DTO.TempRangeDTO">
         SELECT
             history_date AS historyDate,
             temp_max AS maxTemp,

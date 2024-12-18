@@ -5,7 +5,7 @@
 
 <mapper namespace="com.weather.mapper.WeatherStationMapper">
 
-    <select id="getCountStation" resultType="DTO.com.weather.domain.StationCountDTO">
+    <select id="getCountStation" resultType="com.weather.domain.DTO.StationCountDTO">
         SELECT
             station_city AS stationCity, COUNT(1) AS count
         FROM
@@ -14,7 +14,7 @@
             station_city
     </select>
 
-    <select id="getCountStationType" resultType="DTO.com.weather.domain.StationTypeCountDTO">
+    <select id="getCountStationType" resultType="com.weather.domain.DTO.StationTypeCountDTO">
         SELECT
             station_type AS stationType, COUNT(1) AS count
         FROM

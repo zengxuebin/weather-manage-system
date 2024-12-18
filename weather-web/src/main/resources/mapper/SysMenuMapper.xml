@@ -21,7 +21,7 @@
         where m.status = '0' and rm.role_id = #{roleId}
     </select>
 
-    <select id="selectMenuTreeByUserId" parameterType="Long" resultType="entity.com.weather.domain.SysMenu">
+    <select id="selectMenuTreeByUserId" parameterType="Long" resultType="com.weather.domain.entity.SysMenu">
         select distinct m.menu_id, m.menu_name, m.menu_type, m.parent_id, m.path, m.component, m.visible, m.status,
                         m.perms, m.icon, m.order_num
         from sys_menu m

@@ -5,18 +5,20 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.weather.common.constant.UserConstants;
 import com.weather.common.utils.ApiResult;
-import com.weather.common.utils.RedisCache;
 import com.weather.common.utils.SecurityUtil;
+import com.weather.domain.DTO.req.system.SysUserQueryReqDTO;
+import com.weather.domain.DTO.req.system.SysUserReqDTO;
 import com.weather.domain.PageInfo;
 import com.weather.domain.entity.SysUser;
-import com.weather.domain.model.SysUserQuery;
-import com.weather.service.SysDeptService;
-import com.weather.service.SysRoleService;
 import com.weather.service.SysUserService;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -31,25 +33,25 @@ public class SysUserController {
     @Autowired
     private SysUserService userService;
 
-    @Autowired
-    private SysRoleService roleService;
-
-    @Autowired
-    private SysDeptService deptService;
-
-    @Autowired
-    private RedisCache redisCache;
-
     /**
      * 分页查询用户
      * @param pageInfo 分页条件
      * @return 数据
      */
     @PostMapping("/page")
-    public ApiResult queryPageList(@RequestBody PageInfo<SysUserQuery> pageInfo) {
-        System.out.println(pageInfo.getPageNum());
+    public ApiResult queryPageList(@RequestBody PageInfo<SysUserQueryReqDTO> pageInfo) {
+        SysUserQueryReqDTO entity = pageInfo.getEntity();
+        LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
+        if (ObjectUtils.isNotEmpty(entity)) {
+            queryWrapper.like(StringUtils.isNotBlank(entity.getUsername()), SysUser::getUsername, entity.getUsername())
+                    .like(StringUtils.isNotBlank(entity.getPhone()), SysUser::getPhone, entity.getPhone())
+                    .like(StringUtils.isNotBlank(entity.getEmail()), SysUser::getEmail, entity.getEmail())
+                    .eq(StringUtils.isNotBlank(entity.getSex()), SysUser::getSex, entity.getSex())
+                    .eq(entity.getDeptId() != null, SysUser::getDeptId, entity.getDeptId())
+                    .eq(StringUtils.isNotBlank(entity.getStatus()), SysUser::getStatus, entity.getStatus());
+        }
         IPage<SysUser> page = new Page<>(pageInfo.getPageNum(), pageInfo.getPageSize());
-        return ApiResult.success(userService.page(page));
+        return ApiResult.success(userService.page(page, queryWrapper));
     }
 
     /**
@@ -64,11 +66,17 @@ public class SysUserController {
 
     /**
      * 新增用户
-     * @param user 用户
+     *
+     * @param sysUserReqDTO 用户传输对象
      * @return 结果
      */
-    @PostMapping("/save")
-    public ApiResult saveUser(@Validated @RequestBody SysUser user) {
+    @PostMapping("/add")
+    public ApiResult addUser(@Validated @RequestBody SysUserReqDTO sysUserReqDTO) {
+        if (StringUtils.isEmpty(sysUserReqDTO.getNickname())) {
+            sysUserReqDTO.setNickname(sysUserReqDTO.getUsername());
+        }
+        SysUser user = new SysUser();
+        BeanUtils.copyProperties(sysUserReqDTO, user);
         if (!userService.checkUsernameUnique(user)) {
             return ApiResult.warn("新增用户'" + user.getUsername() + "'失败，登陆账号已存在");
         } else if (!userService.checkPhoneUnique(user)) {
@@ -83,19 +91,23 @@ public class SysUserController {
 
     /**
      * 修改用户信息
-     * @param user 用户信息
+     *
+     * @param sysUserReqDTO 用户传输对象
      * @return 结果
      */
-    @PostMapping("/edit")
-    public ApiResult editUser(@Validated @RequestBody SysUser user) {
-        if (!userService.checkUsernameUnique(user)) {
-            return ApiResult.warn("修改用户'" + user.getUsername() + "'失败，登陆账号已存在");
-        } else if (!userService.checkPhoneUnique(user)) {
-            return ApiResult.warn("修改用户'" + user.getUsername() + "'失败，手机号码已存在");
-        } else if (!userService.checkEmailUnique(user)) {
-            return ApiResult.warn("修改用户'" + user.getUsername() + "'失败，电子邮箱已存在");
+    @PostMapping("/update")
+    public ApiResult updateUser(@Validated @RequestBody SysUserReqDTO sysUserReqDTO) {
+        if (StringUtils.isEmpty(sysUserReqDTO.getNickname())) {
+            sysUserReqDTO.setNickname(sysUserReqDTO.getUsername());
         }
+
+        SysUser user = new SysUser();
+        BeanUtils.copyProperties(sysUserReqDTO, user);
+        LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(SysUser::getUsername, user.getUsername());
+        user.setUserId(userService.getOne(queryWrapper).getUserId());
         user.setUpdateBy(SecurityUtil.getLoginUser().getUsername());
+        user.setUpdateTime(new Date());
         return userService.updateById(user) ? ApiResult.success("修改成功") : ApiResult.error("修改失败，请联系系统管理员");
     }
 
@@ -112,12 +124,29 @@ public class SysUserController {
 
     /**
      * 删除用户
-     * @param userIds 用户id
+     *
+     * @param id 用户id
      * @return 结果
      */
-    @PostMapping("/del")
-    public ApiResult removeUserByIds(List<Long> userIds) {
-        return userService.removeByIds(userIds) ? ApiResult.success("删除成功") : ApiResult.error("删除失败");
+    @PostMapping("/delete")
+    public ApiResult deleteUser(@RequestBody Long id) {
+        if (SecurityUtil.isAdmin(id)) {
+            return ApiResult.warn("管理员不能删除");
+        }
+        userService.removeById(id);
+        return ApiResult.success();
+    }
+
+    /**
+     * 批量删除用户
+     *
+     * @param ids id列表
+     * @return 是否删除
+     */
+    @PostMapping("batchDelete")
+    public ApiResult batchDeleteSysUser(@RequestBody List<Integer> ids) {
+        userService.removeByIds(ids);
+        return ApiResult.success();
     }
 
     /**
@@ -125,7 +154,7 @@ public class SysUserController {
      * @return 在线用户
      */
     @PostMapping("/online/page")
-    public ApiResult userOnline(@RequestBody PageInfo<SysUserQuery> query) {
+    public ApiResult userOnline(@RequestBody PageInfo<SysUserQueryReqDTO> query) {
         LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(SysUser::getOnline, UserConstants.ONLINE);
         Page<SysUser> page = new Page<>(query.getPageNum(), query.getPageSize());

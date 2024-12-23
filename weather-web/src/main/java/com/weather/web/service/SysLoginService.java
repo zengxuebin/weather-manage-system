@@ -1,8 +1,6 @@
 package com.weather.web.service;
 
-import com.weather.common.constant.IpConstants;
 import com.weather.common.exception.CustomException;
-import com.weather.common.utils.AddressUtil;
 import com.weather.common.utils.RedisCache;
 import com.weather.common.utils.RedisKeyUtil;
 import com.weather.domain.entity.SysUser;
@@ -84,8 +82,8 @@ public class SysLoginService {
     public void recordLoginInfo(Long userId) {
         SysUser sysUser = new SysUser();
         sysUser.setUserId(userId);
-        sysUser.setLoginIp(AddressUtil.getIpInfo(IpConstants.IP));
-        sysUser.setLoginLocation(AddressUtil.getIpInfo(IpConstants.ADDR));
+//        sysUser.setLoginIp(AddressUtil.getIpInfo(IpConstants.IP));
+//        sysUser.setLoginLocation(AddressUtil.getIpInfo(IpConstants.ADDR));
         sysUser.setOnline("0");
         sysUser.setLoginTime(new Date());
         sysUserService.updateById(sysUser);

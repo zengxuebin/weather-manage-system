@@ -44,12 +44,6 @@ config:
     # header名称
     header: Authorization
 
-# 阿里云短信
-aliyun:
-  sms:
-    accessKey: LTAI5tMvk6LyTNXCcj36rai7
-    accessSecret: AI8RWzZ97hNf4W5QchpwTvqEKUpmqg
-
 project:
   # 名称
   name: weather

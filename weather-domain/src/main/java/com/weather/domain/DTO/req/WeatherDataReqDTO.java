@@ -1,31 +1,18 @@
-package com.weather.domain.entity;
+package com.weather.domain.DTO.req;
 
-import com.alibaba.fastjson2.annotation.JSONField;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 /**
- * 气象数据表
- * @author linkaixuan
- * @since 2024/5/4 02:42
+ * 天气数据查询请求参数
+ *
+ * @author zengxuebin
+ * @since 2024/12/24 23:59
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@TableName("t_weather_data")
-public class WeatherData {
+public class WeatherDataReqDTO {
 
-    /**
-     * 气象数据ID
-     */
-    @TableId
-    private Long dataId;
     /**
      * 站点
      */
@@ -33,7 +20,6 @@ public class WeatherData {
     /**
      * 数据采集时间
      */
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataCollectTime;
     /**
      * 天气描述
@@ -72,7 +58,7 @@ public class WeatherData {
      */
     private Integer visibility;
     /**
-     * 空气质量描述
+     * 空气质量描述 优/良/轻度污染/重度污染
      */
     private String airQualityDesc;
     /**
@@ -103,18 +89,5 @@ public class WeatherData {
      * 一氧化氮
      */
     private Float co;
-    /**
-     * 删除标志(0存在 1删除)
-     */
-    private String delFlag;
-    /**
-     * 舒适度
-     */
-    @TableField(exist = false)
-    private String comfort;
-    /**
-     * 是否 被处理
-     */
-    private String isHandled;
 
 }

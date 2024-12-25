@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -55,7 +55,7 @@ public class WeatherDataServiceImpl extends ServiceImpl<WeatherDataMapper, Weath
 
         // 构建WeatherData对象
         WeatherData weatherData = new WeatherData();
-        weatherData.setDataCollectTime(new Date());
+        weatherData.setDataCollectTime(LocalDateTime.now());
         weatherData.setTemperature(realtime.getFloat("temperature"));
         weatherData.setWeather(realtime.getString("skycon"));
         weatherData.setHumidity(realtime.getFloat("humidity"));

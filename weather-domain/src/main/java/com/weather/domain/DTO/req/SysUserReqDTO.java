@@ -1,4 +1,4 @@
-package com.weather.domain.DTO.req.system;
+package com.weather.domain.DTO.req;
 
 import lombok.Data;
 

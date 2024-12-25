@@ -3,106 +3,34 @@ package com.weather.web.controller.weather;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.weather.common.utils.ApiResult;
+import com.weather.domain.DTO.req.WeatherDataQueryReqDTO;
+import com.weather.domain.DTO.req.WeatherDataReqDTO;
 import com.weather.domain.PageInfo;
 import com.weather.domain.entity.WeatherData;
-import com.weather.domain.entity.WeatherStation;
-import com.weather.domain.model.WeatherDataQuery;
 import com.weather.service.WeatherDataService;
-import com.weather.service.WeatherStationService;
 import org.apache.commons.lang3.ObjectUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * 数据采集
+ * 气象数据管理
+ *
  * @author linkaixuan
  * @since 2024/5/16 12:10
  */
 @RestController
-@RequestMapping("/weatherData")
+@RequestMapping("/weather/data")
 public class WeatherDataController {
 
     @Autowired
-    private WeatherStationService stationService;
-
-    @Autowired
     private WeatherDataService weatherDataService;
-
-    /**
-     * 采集气象数据
-     *
-     * @return 气象数据列表
-     */
-    @PostMapping("/collect")
-    public ApiResult collectWeatherData() {
-        List<WeatherStation> stationList = stationService.list();
-        RestTemplate restTemplate = new RestTemplate();
-        AtomicReference<String> json = new AtomicReference<>("");
-
-        // 创建线程池，设置最大并发数为3
-        ExecutorService executor = Executors.newFixedThreadPool(3);
-
-        List<Future<?>> futures = new ArrayList<>();
-
-        for (WeatherStation station : stationList) {
-            String location = station.getStationLongitude() + "," + station.getStationLatitude();
-
-            Future<?> future = executor.submit(() -> {
-                try {
-                    boolean success = false;
-                    int retryCount = 3;
-                    int retryInterval = 500;
-
-                    for (int i = 0; i < retryCount; i++) {
-                        try {
-                            json.set(restTemplate.getForObject("https://api.caiyunapp.com/v2.6/TAkhjf8d1nlSlspN/" + location + "/realtime",
-                                    String.class));
-                            weatherDataService.saveWeatherDataToDatabase(station.getStationNo(), json.get());
-                            success = true;
-                            break;
-                        } catch (HttpClientErrorException.TooManyRequests ex) {
-                            Thread.sleep(retryInterval);
-                        }
-                    }
-
-                    if (!success) {
-                        throw new RuntimeException("Exceeded retry limit");
-                    }
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            });
-
-            futures.add(future);
-        }
-
-        // 等待所有任务完成
-        for (Future<?> future : futures) {
-            try {
-                future.get();
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
-
-        // 关闭线程池
-        executor.shutdown();
-
-        return ApiResult.success();
-    }
 
     /**
      * 分页查询气象数据
@@ -111,9 +39,9 @@ public class WeatherDataController {
      * @return 监测站
      */
     @PostMapping("/page")
-    public ApiResult queryPageList(@RequestBody PageInfo<WeatherDataQuery> query) {
+    public ApiResult queryPageList(@RequestBody PageInfo<WeatherDataQueryReqDTO> query) {
         LambdaQueryWrapper<WeatherData> queryWrapper = new LambdaQueryWrapper<>();
-        WeatherDataQuery entity = query.getEntity();
+        WeatherDataQueryReqDTO entity = query.getEntity();
         if (ObjectUtils.isNotEmpty(entity.getStationNo())) {
             if (ObjectUtils.isNotEmpty(entity.getStationNo())) {
                 queryWrapper.eq(WeatherData::getStationNo, entity.getStationNo());
@@ -121,10 +49,64 @@ public class WeatherDataController {
             if (ObjectUtils.isNotEmpty(entity.getWindDirection())) {
                 queryWrapper.eq(WeatherData::getWindDirection, entity.getWindDirection());
             }
+            if (ObjectUtils.isNotEmpty(entity.getDataCollectDate())) {
+                queryWrapper.eq(WeatherData::getDataCollectTime, entity.getDataCollectDate());
+            }
         }
 
         queryWrapper.orderByDesc(WeatherData::getDataCollectTime);
         Page<WeatherData> page = new Page<>(query.getPageNum(), query.getPageSize());
         return ApiResult.success(weatherDataService.page(page, queryWrapper));
     }
+
+    /**
+     * 新增气象数据
+     *
+     * @param weatherDataReqDTO 气象数据传输对象
+     * @return 结果
+     */
+    @PostMapping("/add")
+    public ApiResult addWeatherData(@Validated @RequestBody WeatherDataReqDTO weatherDataReqDTO) {
+        WeatherData weatherData = new WeatherData();
+        BeanUtils.copyProperties(weatherDataReqDTO, weatherData);
+        return weatherDataService.save(weatherData) ? ApiResult.success("新建成功") : ApiResult.error("新建失败");
+    }
+
+    /**
+     * 修改气象数据信息
+     *
+     * @param weatherDataReqDTO 气象数据传输对象
+     * @return 结果
+     */
+    @PostMapping("/update")
+    public ApiResult updateWeatherData(@Validated @RequestBody WeatherDataReqDTO weatherDataReqDTO) {
+        WeatherData weatherData = new WeatherData();
+        BeanUtils.copyProperties(weatherDataReqDTO, weatherData);
+        return weatherDataService.updateById(weatherData) ? ApiResult.success("修改成功") : ApiResult.error("修改失败");
+    }
+
+    /**
+     * 删除气象数据
+     *
+     * @param id 气象数据id
+     * @return 结果
+     */
+    @PostMapping("/delete")
+    public ApiResult deleteWeatherData(@RequestBody Long id) {
+        weatherDataService.removeById(id);
+        return ApiResult.success();
+    }
+
+    /**
+     * 批量删除气象数据
+     *
+     * @param ids id列表
+     * @return 是否删除
+     */
+    @PostMapping("batchDelete")
+    public ApiResult batchDeleteWeatherData(@RequestBody List<Integer> ids) {
+        weatherDataService.removeByIds(ids);
+        return ApiResult.success();
+    }
+
 }

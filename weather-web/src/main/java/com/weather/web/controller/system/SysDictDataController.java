@@ -39,7 +39,6 @@ public class SysDictDataController {
      * @param query 查询字段
      * @return 结果集
      */
-//    @PreAuthorize("@permissionService.hasPermission('system:dict:list')")
     @PostMapping("/page")
     public ApiResult queryPageList(@RequestBody PageInfo<SysDictDataQuery> query) {
         LambdaQueryWrapper<SysDictData> wrapper = new LambdaQueryWrapper<>();

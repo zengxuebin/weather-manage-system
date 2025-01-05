@@ -12,6 +12,7 @@ import static com.google.code.kaptcha.Constants.*;
 
 /**
  * 验证码配置
+ *
  * @author linkaixuan
  * @since 2024/3/24 13:19
  */
@@ -41,7 +42,7 @@ public class CaptchaConfig {
         // 验证码文本字体样式 默认为new Font("Arial", 1, fontSize), new Font("Courier", 1, fontSize)
         properties.setProperty(KAPTCHA_TEXTPRODUCER_FONT_NAMES, "Arial,Courier");
         // 图片样式 水纹WaterRipple 鱼眼FishEyeGimpy 阴影ShadowGimpy
-        properties.setProperty(KAPTCHA_OBSCURIFICATOR_IMPL, "com.google.code.kaptcha.impl.ShadowGimpy");
+//        properties.setProperty(KAPTCHA_OBSCURIFICATOR_IMPL, "com.google.code.kaptcha.impl.ShadowGimpy");
 
         Config config = new Config(properties);
         defaultKaptcha.setConfig(config);

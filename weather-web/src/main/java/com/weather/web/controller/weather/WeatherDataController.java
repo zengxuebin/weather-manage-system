@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 /**
@@ -43,15 +45,15 @@ public class WeatherDataController {
         LambdaQueryWrapper<WeatherData> queryWrapper = new LambdaQueryWrapper<>();
         WeatherDataQueryReqDTO entity = query.getEntity();
         if (ObjectUtils.isNotEmpty(entity.getStationNo())) {
-            if (ObjectUtils.isNotEmpty(entity.getStationNo())) {
-                queryWrapper.eq(WeatherData::getStationNo, entity.getStationNo());
-            }
-            if (ObjectUtils.isNotEmpty(entity.getWindDirection())) {
-                queryWrapper.eq(WeatherData::getWindDirection, entity.getWindDirection());
-            }
-            if (ObjectUtils.isNotEmpty(entity.getDataCollectDate())) {
-                queryWrapper.eq(WeatherData::getDataCollectTime, entity.getDataCollectDate());
-            }
+            queryWrapper.eq(WeatherData::getStationNo, entity.getStationNo());
+        }
+        if (ObjectUtils.isNotEmpty(entity.getWindDirection())) {
+            queryWrapper.eq(WeatherData::getWindDirection, entity.getWindDirection());
+        }
+        if (ObjectUtils.isNotEmpty(entity.getDataCollectDate())) {
+            LocalDateTime startOfDay = entity.getDataCollectDate().atStartOfDay(); // 当天的 00:00:00
+            LocalDateTime endOfDay = entity.getDataCollectDate().atTime(LocalTime.MAX);
+            queryWrapper.between(WeatherData::getDataCollectTime, startOfDay, endOfDay);
         }
 
         queryWrapper.orderByDesc(WeatherData::getDataCollectTime);

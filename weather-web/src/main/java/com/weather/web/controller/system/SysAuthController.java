@@ -5,6 +5,7 @@ import com.weather.common.utils.ApiResult;
 import com.weather.common.utils.RedisCache;
 import com.weather.common.utils.RedisKeyUtil;
 import com.weather.common.utils.SecurityUtil;
+import com.weather.domain.DTO.req.ChangePasswordReqDTO;
 import com.weather.domain.entity.SysDept;
 import com.weather.domain.entity.SysMenu;
 import com.weather.domain.entity.SysUser;
@@ -12,8 +13,10 @@ import com.weather.domain.model.LoginBody;
 import com.weather.domain.model.LoginUser;
 import com.weather.service.SysDeptService;
 import com.weather.service.SysMenuService;
+import com.weather.service.SysUserService;
 import com.weather.web.security.SecretUtil;
 import com.weather.web.service.SysLoginService;
+import com.weather.web.service.SysPasswordService;
 import com.weather.web.service.SysPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +32,7 @@ import java.util.Set;
  */
 @RestController
 @RequestMapping("/auth")
-public class SysLoginController {
+public class SysAuthController {
 
     @Autowired
     private SysLoginService loginService;
@@ -45,6 +48,12 @@ public class SysLoginController {
 
     @Autowired
     private RedisCache redisCache;
+
+    @Autowired
+    private SysPasswordService passwordService;
+
+    @Autowired
+    private SysUserService sysUserService;
 
     /**
      * 账号密码登陆
@@ -73,6 +82,18 @@ public class SysLoginController {
         redisCache.deleteObject(RedisKeyUtil.getTokenKey(token));
 
         return ApiResult.success("退出成功");
+    }
+
+    @PostMapping("changePassword")
+    public ApiResult changePassword(@RequestBody ChangePasswordReqDTO changePasswordReqDTO) {
+        Long userId = SecurityUtil.getUserId();
+        SysUser sysUser = sysUserService.getById(userId);
+        boolean matches = passwordService.matches(sysUser, changePasswordReqDTO.getOldPassword());
+        if (!matches) {
+            return ApiResult.error("旧密码错误");
+        }
+        sysUser.setPassword(SecurityUtil.encryptPassword(changePasswordReqDTO.getNewPassword()));
+        return sysUserService.updateById(sysUser) ? ApiResult.success("修改成功") : ApiResult.error("修改失败");
     }
 
     /**

@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  * 历史天气统计表
@@ -31,8 +31,8 @@ public class WeatherHistory {
     /**
      * 当天时间
      */
-    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
-    private Date historyDate;
+    @JSONField(format = "yyyy-MM-dd")
+    private LocalDate historyDate;
     /**
      * 当天最高温度
      */
@@ -44,14 +44,14 @@ public class WeatherHistory {
     /**
      * 当天降水量
      */
-    private Float precipitation;
+    private Double precipitation;
     /**
      * 当天风速
      */
-    private Float windSpeed;
+    private Double windSpeed;
     /**
      * 当天能见度
      */
-    private Float visibility;
+    private Double visibility;
 
 }

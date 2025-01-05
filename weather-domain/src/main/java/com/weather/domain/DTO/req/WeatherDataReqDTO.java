@@ -14,6 +14,11 @@ import java.time.LocalDateTime;
 public class WeatherDataReqDTO {
 
     /**
+     * 数据id
+     */
+    private Long dataId;
+
+    /**
      * 站点
      */
     private Long stationNo;

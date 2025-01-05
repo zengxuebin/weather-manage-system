@@ -2,7 +2,6 @@ package com.weather.web.async;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.weather.common.enums.HandledStatusEnum;
-import com.weather.common.utils.ExpirationChecker;
 import com.weather.domain.entity.WeatherData;
 import com.weather.domain.entity.WeatherHistory;
 import com.weather.domain.entity.WeatherStation;
@@ -12,10 +11,7 @@ import com.weather.service.WeatherStationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -43,12 +39,6 @@ public class AsyncService {
 
     @Autowired
     private WeatherStationService stationService;
-
-    @Autowired
-    private ExpirationChecker expirationChecker;
-
-    @Autowired
-    private ApplicationContext context;
 
     /**
      * 异步转存历史气象数据
@@ -131,12 +121,5 @@ public class AsyncService {
         weatherDataService.updateBatchById(updateDataList);
 
         log.info("异步转存历史气象数据完成！");
-    }
-
-    @Scheduled(fixedRate = 60000)
-    public void checkExpiration() {
-        if (expirationChecker.isExpired()) {
-            ((ConfigurableApplicationContext) context).close();
-        }
     }
 }

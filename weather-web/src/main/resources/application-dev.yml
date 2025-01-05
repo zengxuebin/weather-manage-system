@@ -56,6 +56,3 @@ project:
   version: 1.0.0
   # 版权年份
   copyrightYear: 2024
-jasypt:
-  encryptor:
-    password: emVuZ3h1ZWJpbiBmYWxsIGluIGxvdmUgbHVveXVoYW8=

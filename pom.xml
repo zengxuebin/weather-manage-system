@@ -39,7 +39,6 @@
         <bcprov-jdk18on.version>1.73</bcprov-jdk18on.version>
         <dysmsapi.version>2.0.23</dysmsapi.version>
         <flyway.version>9.16.3</flyway.version>
-        <jasypt.version>3.0.5</jasypt.version>
     </properties>
 
     <dependencies>
@@ -84,12 +83,6 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-mysql</artifactId>
             <version>${flyway.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
-        <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>${jasypt.version}</version>
         </dependency>
     </dependencies>
 

@@ -1,7 +1,7 @@
 package com.weather.web;
 
-import com.weather.common.utils.SecurityUtil;
 import com.weather.service.AlertPushService;
+import org.jasypt.encryption.StringEncryptor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -25,8 +25,11 @@ class WeatherApplicationTests {
     @Autowired
     private AlertPushService alertPushService;
 
+    @Autowired
+    private StringEncryptor encoder;
+
     @Test
     void testEncrypt() {
-        System.out.println(SecurityUtil.encryptPassword("test"));
+        System.out.println(encoder.encrypt("2025-01-05 10:13:00"));
     }
 }
